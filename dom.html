@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <ul>
+        <li class="link">Home</li>
+        <li class="link">About</li>
+        <li class="link">Contact</li>
+        <li class="link">Share</li>
+    </ul>
+
+    <script>
+        var links = document.getElementsByClassName('link');
+        
+        console.log(Array.isArray(links));
+        console.log(Array.isArray(Array.from(links)));
+
+        Array.from(links).forEach(function(item){
+            console.log(item)
+        })
+    </script>
+    
+</body>
+</html>
